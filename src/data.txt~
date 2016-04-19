@@ -1,0 +1,42 @@
+service_buy_record:1002:7:5                     2
+
+service_buy_record:1003:7:5                     1
+
+service_buy_record:1002:5:28                   3
+
+service_buy_record:1003:5:28                   7
+
+service_buy_record:1004:5:28                   7
+
+last_post_category:1001                           'zhengzu'
+
+last_post_category:1002                           'baomu'
+
+last_post_category:1003                           'banjia'
+
+last_post_category:1004                           'banjia'
+
+last_post_city:1001                                   10
+
+last_post_city:1002                                   21
+
+last_post_city:1003                                   21
+
+last_post_city:1004                                   21
+
+user_block_pv:1001:zhengzu:10:7           20
+
+user_block_pv:1002:baomu:21:7             15
+
+user_block_pv:1003:banjia:21:7               2
+
+user_block_pv:1004:banjia:21:7               12
+
+last_post_ad:1001:10                                2001
+
+last_post_ad:1002:21                                2002
+
+last_post_ad:1003:21                                2003
+
+last_post_ad:1004:21                                2004 
+end

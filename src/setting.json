@@ -1,0 +1,228 @@
+{
+
+  "filter": {
+
+    "children": [
+
+      {
+
+        "children": [
+
+          {
+
+            "tag_id": "service_buy_record",
+
+            "parameters": [
+
+              {
+
+                "id": "obj_id",
+
+                "type": "para"
+
+              },
+
+              {
+
+                "id": "last_n",
+
+                "type": "const",
+
+                "value": "7"
+
+              },
+
+              {
+
+                "id": "service_type_id",
+
+                "type": "const",
+
+                "value": "5"
+
+              }
+
+            ],
+
+            "tag_type": "NV",
+
+            "filter_value": "1"
+
+          },
+
+          {
+
+            "tag_id": "service_buy_record",
+
+            "parameters": [
+
+              {
+
+                "id": "obj_id",
+
+                "type": "para"
+
+              },
+
+              {
+
+                "id": "last_n",
+
+                "type": "const",
+
+                "value": "5"
+
+              },
+
+              {
+
+                "id": "service_type_id",
+
+                "type": "const",
+
+                "value": "28"
+
+              }
+
+            ],
+
+            "tag_type": "NV",
+
+            "operator": ">",
+
+            "filter_value": "5"
+
+          }
+
+        ],
+
+        "op": "OR"
+
+      },
+
+      {
+
+        "tag_id": "user_block_pv",
+
+        "parameters": [
+
+          {
+
+            "id": "obj_id",
+
+            "type": "para"
+
+          },
+
+          {
+
+            "id": "category_name_en",
+
+            "type": "tag",
+
+            "value": {
+
+              "tag_id": "last_post_category",
+
+              "parameters": [
+
+                {
+
+                  "id": "obj_id",
+
+                  "type": "para"
+
+                }
+
+              ],
+
+              "tag_type": "SV"
+
+            }
+
+          },
+
+          {
+
+            "id": "city_id",
+
+            "type": "tag",
+
+            "value": {
+
+              "tag_id": "last_post_city",
+
+              "parameters": [
+
+                {
+
+                  "id": "obj_id",
+
+                  "type": "para"
+
+                }
+
+              ],
+
+              "tag_type": "SV"
+
+            }
+
+          },
+
+          {
+
+            "id": "last_n",
+
+            "type": "const",
+
+            "value": "7"
+
+          }
+
+        ],
+
+        "tag_type": "NV",
+
+        "operator": ">",
+
+        "filter_value": "10"
+
+      }
+
+    ],
+
+    "op": "AND"
+
+  },
+
+  "export": {
+
+    "tag_id": "last_post_ad",
+
+    "parameters": [
+
+      {
+
+        "id": "obj_id",
+
+        "type": "para"
+
+      },
+
+      {
+
+        "id": "city_id",
+
+        "type": "para"
+
+      }
+
+    ],
+
+    "tag_type": "SV"
+
+  }
+
+}
+
